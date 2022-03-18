@@ -70,8 +70,8 @@ git checkout Nombredelabranch //Cambiar de branches
 
 git merge Nombredelabranchdeorigen //Hay que estar en la branch que se quiera recibir los archivos y poner el nombre de donde se envían
 
-git remote add origin Link del repo //Para saber a donde se envía
+git remote add origin Link del repo //Para subir por primera vez las cosas al repo
 
 git branch -M main //Para que el repo que se vaya a subir esté en main
 
-git push -u origin main //Para subir el repo local al remoto
+git push -u origin main //Para subir el repo local al remoto, con esto se suben una vez se haya hecho el primer commit al remoto
