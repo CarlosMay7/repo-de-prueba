@@ -1,58 +1,28 @@
+
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
 $ git status
 On branch Branch1
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   prueba.txt
-
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        Paraelbranch1.txt
-        Tambienbranch1.txt
+        Pasos_para_repo.txt
 
-
-Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
-$ git add Paraelbranch1.txt
+nothing added to commit but untracked files present (use "git add" to track)
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
-$ git status
-On branch Branch1
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   Paraelbranch1.txt
-        modified:   prueba.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        Tambienbranch1.txt
-
-
-Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
-$ git add Tambienbranch1.txt
+$ git add Pasos_para_repo.txt
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
 $ git status
 On branch Branch1
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-        new file:   Paraelbranch1.txt
-        new file:   Tambienbranch1.txt
-        modified:   prueba.txt
-
+        new file:   Pasos_para_repo.txt
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
-$ git commit -m "Nuevos archivos en branch 1"
-[Branch1 189221f] Nuevos archivos en branch 1
- 3 files changed, 1 insertion(+)
- create mode 100644 Paraelbranch1.txt
- create mode 100644 Tambienbranch1.txt
-
-Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
-$ git statis
-git: 'statis' is not a git command. See 'git --help'.
-
-The most similar command is
-        status
+$ git commit -m "Nuevo archivo donde pongo los pasos para moverme en el repo"
+[Branch1 e61829c] Nuevo archivo donde pongo los pasos para moverme en el repo
+ 1 file changed, 101 insertions(+)
+ create mode 100644 Pasos_para_repo.txt
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
 $ git status
@@ -64,27 +34,17 @@ $ git checkout main
 Switched to branch 'main'
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
-$ git merge
-fatal: No remote for the current branch.
-
-Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
-$ git merge Branch1
-Updating aabb92f..189221f
-Fast-forward
- Paraelbranch1.txt  | 0
- Tambienbranch1.txt | 0
- prueba.txt         | 1 +
- 3 files changed, 1 insertion(+)
- create mode 100644 Paraelbranch1.txt
- create mode 100644 Tambienbranch1.txt
-
-Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
 $ git status
 On branch main
 nothing to commit, working tree clean
 
 Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
-$
+$ git merge Branch1
+Updating 189221f..e61829c
+Fast-forward
+ Pasos_para_repo.txt | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 101 insertions(+)
+ create mode 100644 Pasos_para_repo.txt
 
 
 
