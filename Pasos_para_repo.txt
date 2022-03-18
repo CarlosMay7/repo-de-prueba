@@ -1,0 +1,101 @@
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git status
+On branch Branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   prueba.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Paraelbranch1.txt
+        Tambienbranch1.txt
+
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git add Paraelbranch1.txt
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git status
+On branch Branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Paraelbranch1.txt
+        modified:   prueba.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Tambienbranch1.txt
+
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git add Tambienbranch1.txt
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git status
+On branch Branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Paraelbranch1.txt
+        new file:   Tambienbranch1.txt
+        modified:   prueba.txt
+
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git commit -m "Nuevos archivos en branch 1"
+[Branch1 189221f] Nuevos archivos en branch 1
+ 3 files changed, 1 insertion(+)
+ create mode 100644 Paraelbranch1.txt
+ create mode 100644 Tambienbranch1.txt
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git status
+On branch Branch1
+nothing to commit, working tree clean
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (Branch1)
+$ git checkout main
+Switched to branch 'main'
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git merge
+fatal: No remote for the current branch.
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git merge Branch1
+Updating aabb92f..189221f
+Fast-forward
+ Paraelbranch1.txt  | 0
+ Tambienbranch1.txt | 0
+ prueba.txt         | 1 +
+ 3 files changed, 1 insertion(+)
+ create mode 100644 Paraelbranch1.txt
+ create mode 100644 Tambienbranch1.txt
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$
+
+
+
+git status // Para ver el estado de la branch actual
+
+git add nombredelarchivo.tipo //Para agregar al staging (Antes de hacer el commit)
+
+git commit -m "Mensaje que se quiera enviar con las especificaciones" //Para hacer el commit 
+
+git checkout -b Nombredelabranch //Crear nuevo branch
+
+git checkout Nombredelabranch //Cambiar de branches
+
+git merge Nombredelabranchdeorigen //Hay que estar en la branch que se quiera recibir los archivos y poner el nombre de donde se envían
