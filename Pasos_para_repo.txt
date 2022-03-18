@@ -46,6 +46,16 @@ Fast-forward
  1 file changed, 101 insertions(+)
  create mode 100644 Pasos_para_repo.txt
 
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git remote add origin https://github.com/CarlosMay7/repo-de-prueba.git
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git branch -M main
+
+Carlos@LAPTOP-GG9TG0C8 MINGW64 ~/Desktop/Git (main)
+$ git push -u origin main
+
+
 
 
 git status // Para ver el estado de la branch actual
@@ -59,3 +69,9 @@ git checkout -b Nombredelabranch //Crear nuevo branch
 git checkout Nombredelabranch //Cambiar de branches
 
 git merge Nombredelabranchdeorigen //Hay que estar en la branch que se quiera recibir los archivos y poner el nombre de donde se envían
+
+git remote add origin Link del repo //Para saber a donde se envía
+
+git branch -M main //Para que el repo que se vaya a subir esté en main
+
+git push -u origin main //Para subir el repo local al remoto
